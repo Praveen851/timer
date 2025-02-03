@@ -83,7 +83,7 @@ You can use the QR code to open the app on your mobile device using the Expo Go 
 
 ---
 
-## list of assumptions made during development:
+## List of assumptions made during development:
 1. Categories can be infinite and are not predefined.
 2. Every timer should be manually started after creation, hence all the timer’s status will be set to pause initially and after reset.
 3. For each timer created, a unique id is required.
