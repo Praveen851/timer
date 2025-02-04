@@ -90,3 +90,7 @@ You can use the QR code to open the app on your mobile device using the Expo Go 
 4. Timer functionality is achieved through setInterval and so it should be cleared using clearInterval if the timer is paused or reset.
 
 ---
+## Demo
+[Watch Video](https://raw.githubusercontent.com/Praveen851/timer/main/videos/timer-demo.mp4)
+
+---
