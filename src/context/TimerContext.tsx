@@ -99,7 +99,7 @@ export const TimerProvider = ({ children }: { children: React.ReactNode }) => {
                 prevTimers.map((timer) => {
                     if (timer.id === id && timer.status === "Running") {
                         if (timer.remainingTime > 1) {
-                            const halfwayTime = Math.floor(timer.duration / 2);
+                            const halfwayTime = Math.ceil(timer.duration / 2);
                             if (
                                 timer.isChecked &&
                                 timer.remainingTime === halfwayTime
