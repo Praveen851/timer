@@ -1,8 +1,7 @@
 import React from "react";
-import { View, Text, FlatList } from "react-native";
+import { View, Text, FlatList, StyleSheet } from "react-native";
 import { TimerType } from "../types";
 import { useTimer } from "../context/TimerContext";
-import { styles } from "./HomeScreen";
 
 const HistoryScreen = () => {
     const { timers } = useTimer();
@@ -40,3 +39,32 @@ const HistoryScreen = () => {
 };
 
 export default HistoryScreen;
+
+export const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 16,
+        backgroundColor: "#ffffff",
+    },
+
+    timerCard: {
+        backgroundColor: "#ffffff",
+        padding: 10,
+        marginVertical: 4,
+        marginHorizontal: 8,
+        borderRadius: 6,
+        elevation: 2,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.2,
+        shadowRadius: 1,
+    },
+    timerName: {
+        fontSize: 16,
+        fontWeight: "bold",
+    },
+    timerDetail: {
+        fontSize: 14,
+        color: "#555",
+    },
+});
